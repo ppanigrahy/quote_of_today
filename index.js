@@ -13,7 +13,7 @@ function home_path(req, res){
 
 var server = http.createServer(home_path);
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 server.listen(port);
 console.log("Server started!!!");
 
